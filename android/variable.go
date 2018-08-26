@@ -123,6 +123,10 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
+		Target_destroyed_mutex_usage_whitelist struct {
+			Cppflags []string
+		}
+
 		Target_shim_libs struct {
 			Cppflags []string
 		}
@@ -249,6 +253,7 @@ type productVariables struct {
 
 	Has_legacy_camera_hal1 *bool `json:",omitempty"`
 	Needs_text_relocations *bool `json:",omitempty"`
+	Target_destroyed_mutex_usage_whitelist  *string `json:",omitempty"`
 	Target_shim_libs *string `json:",omitempty"`
 	Uses_qcom_bsp_legacy *bool `json:",omitempty"`
 }
